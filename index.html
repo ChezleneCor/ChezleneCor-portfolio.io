@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chez'lene Cornwall</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <!-- add icon library-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="scripts/stript.js"></script>
+
+</head> 
+<!-- Navigation Bar -->
+<nav class = "navbar">
+    <ul class = "nav-links">
+
+        <!-- Checkbox for hamburger menu-->
+        <input id="menu-toggle" type="checkbox" />
+        <label class="hamburger" for="menu-toggle">&#9776;</label>
+        
+        <!-- navigation menu -->
+        <div id="nav-menu" class="menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="/">Resume</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </div>
+    </ul>
+</nav>
+
+<body class = "main-content" data-theme="light">
+    <div class="home-header">
+        <h2>CHEZ'LENE CORNWALL</h2>
+        <ul>
+            <li>F</li>
+            <li>U</li>
+            <li>L</li>
+            <li>L</li>
+            <li>S</li>
+            <li>T</li>
+            <li>A</li>
+            <li>C</li>
+            <li class="space-needed">K</li>
+            <li>D</li>
+            <li>E</li>
+            <li>V</li>
+            <li>E</li>
+            <li>L</li>
+            <li>O</li>
+            <li>P</li>
+            <li>E</li>
+            <li>R</li>
+        </ul>
+
+
+    </div>
+    <!-- add font awesome icons-->
+    <a href="https://www.linkedin.com/in/chez-lene-cornwall-1ba606149/"><i class="fa fa-linkedin"></i></a>
+    <a href="https://github.com/ChezleneCor"><i class="fa fa-github"></i></a>
+    <a href="#"><i class="fa fa-instagram"></i></a>
+    
+    <header class="section sec1 header active"></header>
+    <main>
+        <section class = "about" id="about">
+            <div class="about-section">
+            <h2>About</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Etiam id lacus sit amet ligula porta fringilla a sit amet lorem. 
+                Morbi id purus tempor, elementum lorem sed, elementum sapien. 
+                Fusce pharetra erat risus, vel porttitor ipsum lacinia sit amet. 
+                Aliquam erat volutpat. Interdum et malesuada fames ac ante ipsum 
+                primis in faucibus. Donec at tellus et ex posuere varius in vitae libero. 
+                Pellentesque habitant morbi tristique senectus et netus et malesuada fames 
+                ac turpis egestas. Curabitur nisi nibh, dignissim a mollis sed, vehicula ut est.</p><br>
+
+                <p>Pellentesque convallis dui sed ante facilisis iaculis. Aliquam rutrum in dui et 
+                eleifend. Nunc imperdiet in magna ac tincidunt. Phasellus eleifend scelerisque 
+                enim vel mollis. Fusce pellentesque urna vitae feugiat dapibus. Nam eget lacus 
+                non ipsum vulputate vehicula. Duis sodales aliquam massa sit amet pellentesque. 
+                In non nibh augue. Pellentesque eu tempus diam.</p>
+            </div>
+            
+        </section>
+
+        <section class = "section sec3 portfolio" id="portfolio">
+
+            <h2>Portfolio</h2>
+
+            <!-- Project 1 Slideshow-->
+            <img class="portfolio-slides" src="images/loginPage.png" style="width:100%">
+            <img class="portfolio-slides" src="images/inventoryPage.png" style="width:100%">
+            <img class="portfolio-slides" src="images/orderPage.png" style="width:100%">
+            <img class="portfolio-slides" src="images/userPage.png" style="width:100%">
+
+            <button class="button display-left" onclick="plusDivs(-1)">&#10094</button>
+            <button class="button display-right" onclick="plusDivs(+1)">&#10095</button>
+
+            <!-- Insert Javascript to change slides-->
+
+        </section>
+
+        <section class = "section sec4 blogs" id="blog"></section>
+
+        <section class = "section sec5 contact" id="contact">
+            <div class="form-container">
+                <h2 class="form-title">Contact Me</h2>
+                <form action="form-process.php" method="post" class = "form-form">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required/>
+
+                    <label for="email">Email Address</label>
+                    <input type="text" id="email" name="email" required/>
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" cols= "30" rows="10" required></textarea>
+
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        
+
+    </footer>
+    
+</body>
+</html>
