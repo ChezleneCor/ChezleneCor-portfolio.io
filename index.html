@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chez'lene Cornwall</title>
+
+    <!-- Link CSS file -->
     <link rel="stylesheet" href="styles/styles.css">
     <!-- add icon library-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="scripts/stript.js"></script>
 
 </head> 
 <!-- Navigation Bar -->
@@ -61,25 +62,29 @@
     <a href="https://github.com/ChezleneCor"><i class="fa fa-github"></i></a>
     <a href="#"><i class="fa fa-instagram"></i></a>
     
-    <header class="section sec1 header active"></header>
+    <header class="section header"></header>
     <main>
         <section class = "about" id="about">
             <div class="about-section">
             <h2>About</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                Etiam id lacus sit amet ligula porta fringilla a sit amet lorem. 
-                Morbi id purus tempor, elementum lorem sed, elementum sapien. 
-                Fusce pharetra erat risus, vel porttitor ipsum lacinia sit amet. 
-                Aliquam erat volutpat. Interdum et malesuada fames ac ante ipsum 
-                primis in faucibus. Donec at tellus et ex posuere varius in vitae libero. 
-                Pellentesque habitant morbi tristique senectus et netus et malesuada fames 
-                ac turpis egestas. Curabitur nisi nibh, dignissim a mollis sed, vehicula ut est.</p><br>
+            <p>My name is Chez'lene Cornwall. I have been programming since I was a senior in
+                high school. I decided to further my education and go to college for an associate's
+                degree specializing in software development. A career in software has been a long-time
+                goal of mine, but freelancing has been something I have been interested in very recently.
+                I like the idea of being able to work on multiple projects at once and gain experience more
+                rapidly by working with various clients. I feel that I can truly push myself through
+                this career path.
+            </p><br>
 
-                <p>Pellentesque convallis dui sed ante facilisis iaculis. Aliquam rutrum in dui et 
-                eleifend. Nunc imperdiet in magna ac tincidunt. Phasellus eleifend scelerisque 
-                enim vel mollis. Fusce pellentesque urna vitae feugiat dapibus. Nam eget lacus 
-                non ipsum vulputate vehicula. Duis sodales aliquam massa sit amet pellentesque. 
-                In non nibh augue. Pellentesque eu tempus diam.</p>
+            <p>The first programming language I learned was Python and it is also the language I am the most comfortable with.
+                    I credit it as one of the main reasons I am still a programmer today. While in high school, I also learned the 
+                    basics of Javascript. I had the opportunity of interning with a local business' IT department and was given the
+                    task of developing a desktop application that could be used to generate business contracts on Microsoft Word and
+                    budget spreadsheets in Excel. After completing this assignment, I was given another task to retrieve the data
+                    from the company's solar panels and populate a CSV file. In my college experience, I, along with my group members,
+                    had the opportunity to create a another desktop application, this time using Python and MySql. We created an inventory 
+                    system where users could control the inventory and users with in the system. 
+            </p>
             </div>
             
         </section>
@@ -89,24 +94,41 @@
             <h2>Portfolio</h2>
 
             <!-- Project 1 Slideshow-->
-            <img class="portfolio-slides" src="images/loginPage.png" style="width:100%">
-            <img class="portfolio-slides" src="images/inventoryPage.png" style="width:100%">
-            <img class="portfolio-slides" src="images/orderPage.png" style="width:100%">
-            <img class="portfolio-slides" src="images/userPage.png" style="width:100%">
 
-            <button class="button display-left" onclick="plusDivs(-1)">&#10094</button>
-            <button class="button display-right" onclick="plusDivs(+1)">&#10095</button>
+                <div class="container">
 
-            <!-- Insert Javascript to change slides-->
+                    <div class="portfolio-slides fade">
+                        <div class="numbertext">1 / 4</div>
+                        <img src="images/loginPage.png" style="width:100%">
+                    </div>
+                    <div class="portfolio-slides fade">
+                        <div class="numbertext">2 / 4</div>
+                        <img src="images/inventoryPage.png" style="width:100%">
+                    </div>
+                    <div class="portfolio-slides fade">
+                        <div class="numbertext">3 / 4</div>
+                        <img src="images/orderPage.png" style="width:100%">
+                    </div>
+                    <div class="portfolio-slides fade">
+                        <div class="numbertext">4 / 4</div>
+                        <img src="images/userPage.png" style="width:100%">
+                    </div>
+                </div>
+
+            <!-- circles-->
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+              </div>
 
         </section>
-
-        <section class = "section sec4 blogs" id="blog"></section>
 
         <section class = "section sec5 contact" id="contact">
             <div class="form-container">
                 <h2 class="form-title">Contact Me</h2>
-                <form action="form-process.php" method="post" class = "form-form">
+                <form action="https://formspree.io/f/xrgvdpzr" method="POST" class = "form-form">
                     <label for="name">Name</label>
                     <input type="text" id="name" name="name" required/>
 
@@ -121,10 +143,8 @@
             </div>
         </section>
     </main>
-    <footer>
-        
-
-    </footer>
+    <!-- Insert Javascript to change slides-->
+    <script src="scripts/portfolio.js"></script>
     
 </body>
 </html>
